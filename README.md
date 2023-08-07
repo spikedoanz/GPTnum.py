@@ -1,6 +1,3 @@
----
-{}
----
 # GPTnum.py
 <p align="center">
   <img src="GPTnum.png" width="500" height="300" alt="Numpy supremus">
@@ -18,8 +15,10 @@
 ---
 
 
-**Wide range of dependencies**
-* numpy
+**Dependencies**
+```bash
+pip install numpy
+```
 
 **Wide range of f̶e̶a̶t̶u̶r̶e̶s̶**
 
@@ -29,12 +28,17 @@
 * DOES NOT support batched inference
 * DOES NOT support multi-threading (yet)
 
-**Install guide**
+**Run guide**
 
-* clone the repository
-* download the model weights from [my google drive](
+* clone the repository from [huggingface](https://huggingface.co/AI-bo/gptnum.py)
+```bash
+python GPTnum.py
+```
+
+
 **Todo list**
 
 * [ ] Add support for multi-threading because why not
 * [ ] Add support for the rest of the GPT-2 model sizes
 * [ ] Comment code, make it all readable, with clear typedefs
+
