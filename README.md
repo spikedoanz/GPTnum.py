@@ -1,7 +1,4 @@
 # GPTnum.py
-<p align="center">
-  <img src="GPTnum.png" width="500" height="300" alt="Numpy supremus">
-</p>
 
 **Heavily inspired by [picoGPT](https://github.com/jaymody/picoGPT) and [llama2.c](https://github.com/karpathy/llama2.c)**
 
