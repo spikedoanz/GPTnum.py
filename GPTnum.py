@@ -109,7 +109,7 @@ def get_encoder():
         encoder=encoder,
         bpe_merges=bpe_merges,
     )
-def load_gpt2_params_from_tf_ckpt(hparams):
+def load_gpt2_params(hparams):
     def set_in_nested_dict(d, keys, val):
         if not keys:
             return val
@@ -141,14 +141,14 @@ def load_gpt2_params_from_tf_ckpt(hparams):
 def load_encoder_hparams_and_params():
     encoder = get_encoder()
     hparams = json.load(open("./model/hparams.json"))
-    params = load_gpt2_params_from_tf_ckpt(hparams)
+    params = load_gpt2_params_from(hparams)
     return encoder, hparams, params
 def main():
     encoder, hparams, params = load_encoder_hparams_and_params()
     prompt = input("Prompt: ")
     input_ids = encoder.encode(prompt)
-    assert len(input_ids) + 40 < hparams["n_ctx"]
-    output_ids = generate(input_ids, params, hparams["n_head"], 40)
+    assert len(input_ids) + 20 < hparams["n_ctx"]
+    output_ids = generate(input_ids, params, hparams["n_head"], 20)
     output_text = encoder.decode(output_ids)
     print(output_text)
 if __name__ == "__main__":
