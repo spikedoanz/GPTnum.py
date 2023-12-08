@@ -4,10 +4,7 @@
 
 ---
 
-* Think GPT is complicated? Guess what? It's not! Introducing GPT-2 with only numpy.
-* No keras, no tensorflow, no pytorch, just it's just matrices all the way down baby!!
-* All in a single file. No funny build scripts, no sneaky tensorflow imports, just one unreadable python file and the model weights like Kaparthy himself intended
-* Banged together over the weekend over a bet made at the office, may god have mercy on you if you try to read the code
+- GPT 2 implementation from scratch with numpy as the only dependency
 
 ---
 
@@ -31,11 +28,3 @@ pip install numpy
 ```bash
 python GPTnum.py
 ```
-
-
-**Todo list**
-
-* [ ] Add support for multi-threading because why not
-* [ ] Add support for the rest of the GPT-2 model sizes
-* [ ] Comment code, make it all readable, with clear typedefs
-
