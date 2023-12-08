@@ -15,7 +15,9 @@ pip install numpy
 
 **Run guide**
 
-* clone the repository from [huggingface](https://huggingface.co/AI-bo/gptnum.py)
+Clone the repository from [huggingface](https://huggingface.co/AI-bo/gptnum.py)
 ```bash
+git clone https://huggingface.co/AI-bo/gptnum.py
+cd gptnum.py
 python GPTnum.py
 ```
