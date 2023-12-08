@@ -1,4 +1,6 @@
 # GPTnum.py
+
+![name](/GPTnum.png)
 ---
 
 GPT 2 implementation from scratch with numpy as the only dependency
